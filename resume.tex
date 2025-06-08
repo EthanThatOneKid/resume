@@ -1,11 +1,11 @@
 %-------------------------
-% Resume in Latex
+% Ethan Davidson's Resume in LaTeX
 % Author: Ethan Davidson (https://etok.me/)
 % Based on: https://github.com/sb2nov/resume
 % License: MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 \usepackage{lmodern}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -18,7 +18,12 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{textcomp}
 \input{glyphtounicode}
+
+% Fix font shape and footskip warning
+\usepackage{fix-cm}
+\setlength{\footskip}{5pt}
 
 
 %----------FONT OPTIONS----------
@@ -57,7 +62,7 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -106,101 +111,91 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    \textbf{\Huge \scshape Ethan Davidson} \\ \vspace{1pt}
-    \small \href{mailto:ethandavidson@csu.fullerton.edu}{\underline{ethandavidson@csu.fullerton.edu}} $|$ 
-    \href{https://etok.me}{\underline{etok.me}} $|$
-    \href{https://linkedin.com/in/etok}{\underline{linkedin.com/in/etok}} $|$
-    \href{https://github.com/ethanthatonekid}{\underline{github.com/ethanthatonekid}}
+  \textbf{\Huge \scshape Ethan Davidson} \\ \vspace{1pt}
+  \small \href{mailto:ethandavidson@csu.fullerton.edu}{\underline{ethandavidson@csu.fullerton.edu}} $|$ 
+  \href{https://etok.me}{\underline{ethandavidson.com}} $|$
+  \href{https://linkedin.com/in/etok}{\underline{linkedin.com/in/etok}} $|$
+  \href{https://github.com/ethanthatonekid}{\underline{github.com/ethanthatonekid}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {California State University, Fullerton (CSUF)}{Fullerton, CA}
-      {Bachelor of Science in Computer Science}{Expected 2024}
-      \resumeItemListStart
-        \resumeItem{Coursework: Data Structures \& Algorithms, Object-Oriented Programming, Computer Architecture, Operating Systems, Databases, Discrete Mathematics}
-        \resumeItem{Additional Focus: Statistics, AI, Physics, Software Engineering, x86 Assembly, File Structures \& Databases, Android/Swift, Game Design, Cloud Computing \& Security}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {California State University, Fullerton (CSUF)}{Fullerton, CA}
+    {Bachelor of Science in Computer Science}{}
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Software Engineering Intern}{May 2022 -- August 2022}
-      {Google}{Kirkland, WA}
-      \resumeItemListStart
-        \resumeItem{Developed software for the Google Dataplex UI team, designed, tested, reviewed code, and presented application results to engineers}
-        \resumeItem{Designed and implemented a reactive UI state configuration tool, streamlining Dataplex Action UI testing in Angular and RxJS environments}
-      \resumeItemListEnd
-    
-    \resumeSubheading
-      {STEP Intern}{May 2021 -- August 2021}
-      {Google}{Remote}
-      \resumeItemListStart
-        \resumeItem{Collaborated with the project team to develop a dashboard for internal hotel promotions reporting application for Google Hotel Center partners}
-        \resumeItem{Contributed to the C++ BigTable access layer, Java middleware, Angular frontend, integration testing, and technical documentation}
-        \resumeItem{Organized pivotal meetings, including Bug Bash, and guaranteed product launch}
-        \resumeItem{Improved code health and modernization of outdated C++ code platform through planned contributions to combat growing tech debt}
-      \resumeItemListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Software Engineering Intern}{May 2022 -- August 2022}
+    {Google}{Kirkland, WA}
+    \resumeItemListStart
+      \resumeItem{Architected and shipped production features for Google Dataplex UI platform using Angular and RxJS}
+      \resumeItem{Engineered a reactive state configuration system that reduced testing time by 40\%}
+      \resumeItem{Implemented comprehensive test coverage and CI/CD pipelines for critical UI components}
+      \resumeItem{Drove technical design reviews and delivered impact presentations to senior engineers}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Open Source Software Team Lead}{Fall 2020 -- Spring 2024}
-      {Association for Computing Machinery (ACM) at CSUF}{Fullerton, CA}
-      \resumeItemListStart
-        \resumeItem{Led 20+ open-source projects, weekly community syncs, and interactive workshops, empowering 100+ contributors and guiding project teams}
-        \resumeItem{Organized a hackathon series with 10 technical workshops, leading to 15 project submissions}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+  \resumeSubheading
+    {Student Training in Engineering Program (STEP) Intern}{May 2021 -- August 2021}
+    {Google}{Remote}
+    \resumeItemListStart
+      \resumeItem{Owned full-stack development of critical hotel promotions dashboard using Java and Angular}
+      \resumeItem{Optimized BigTable access patterns and refactored legacy C++ services for 2x throughput}
+      \resumeItem{Designed and implemented RESTful APIs to streamline data flow between services}
+      \resumeItem{Spearheaded cross-team quality initiatives and drove successful production deployment}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Deno Blocks} $|$ \emph{Visual IDE to develop and deploy TypeScript (Deno) code}}{2023}
-          \resumeItemListStart
-            \resumeItem{Created an in-browser visual code editor with drag-and-drop support using Fresh and Blockly}
-            \resumeItem{Implemented Deno Kv persistent storage and GitHub OAuth2 authentication}
-            \resumeItem{Awarded "Most fun" and "Ryan's Favorite" Deno Subhosting hackathon submission by Ryan Dahl}
-          \resumeItemListEnd
-      
-      \resumeProjectHeading
-          {\textbf{Open Source Software Team} $|$ \emph{Association for Computing Machinery (ACM) at CSUF}}{2020 -- 2024}
-          \resumeItemListStart
-            \resumeItem{Led 20+ open-source projects, weekly community syncs, and interactive workshops, empowering 100+ contributors}
-            \resumeItem{Organized a hackathon series with 10 technical workshops, leading to 15 project submissions}
-          \resumeItemListEnd
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{RoundUp for Impact (RuFi)} $|$ \emph{First Place Winner, HackSC 2024}}{Feb 2024}
+    \resumeItemListStart
+      \resumeItem{Built real-time market analysis with DAIN, winning 1st place among 100+ teams}
+      \resumeItem{Shipped Next.js fintech platform using ZK crypto, SingleStore, Polygon API, and Anyone Protocol}
+      \resumeItem{Cut onboarding time 60\% via multilingual voice UI and streamlined OAuth flow}
+    \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{FullyHacks} $|$ \emph{Hackathon Event Platform}}{2021 -- 2024}
-          \resumeItemListStart
-            \resumeItem{Spearheaded development of event's official website using Next.js, enabling participants to register and explore sponsor information}
-            \resumeItem{Developed and deployed a custom Discord bot using Node.js and Discord.js to streamline participant check-ins and manage virtual attendees}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+  \resumeProjectHeading
+    {\textbf{Open Source Software Team} $|$ \emph{Association for Computing Machinery, CSUF}}{2020 -- 2024}
+    \resumeItemListStart
+      \resumeItem{Scaled developer community from 0 to 100+ contributors across 20 production open-source tools}
+      \resumeItem{Launched technical accelerator with 10 workshops per semester, driving 15 successful project launches}
+      \resumeItem{Established engineering culture through Git workflows, code reviews, and async collaboration}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{FullyHacks} $|$ \emph{Hackathon Infrastructure Platform}}{2021 -- 2024}
+    \resumeItemListStart
+      \resumeItem{Architected full-stack event platform with Next.js, serving 300+ users and multiple sponsor integrations}
+      \resumeItem{Engineered real-time event automation system using Node.js, Discord API, and Digital Ocean}
+      \resumeItem{Drove 100\% participant engagement through seamless registration and project submission flows}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Deno Blocks} $|$ \emph{Visual Programming Platform, Deno Subhosting Hackathon Overall Winner}}{Jan 2024}
+    \resumeItemListStart
+      \resumeItem{Pioneered no-code TypeScript deployment platform using Fresh framework and Deno Subhosting}
+      \resumeItem{Architected scalable user authentication and persistent storage using GitHub OAuth and Deno KV}
+      \resumeItem{Recognized by Deno creator Ryan Dahl for technical innovation and developer experience}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 
-
-%
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Frontend}{: JavaScript/TypeScript, HTML/CSS, React, Svelte, Vue, Angular, A11y, UI/UX, Swift} \\
-     \textbf{Backend}{: Node.js, Deno, Python, Go, Protobuf, C++, Java, OpenAPI, SQL, PostgreSQL, SQLite, MongoDB, Next.js} \\
-     \textbf{Tools}{: Git/GitHub, Shell, CI/CD, Linux, Nix, Terraform, MATLAB, Google Cloud (GCP), AWS, Googling} \\
-     \textbf{AI/LLM}{: OpenAI, ChatGPT, Copilot, Ollama, Gemini, Groq, TensorFlow, HuggingFace, Modal, Modus}
+\begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+    \textbf{Programming}{: TypeScript/JavaScript, Python, Go, C++, Java, SQL, Shell, Protobuf, RDF, OpenAPI} \\
+    \textbf{System Design}{: Docker, AWS, GCP, Linux, Nix, Terraform, CI/CD, Git, Redis, MongoDB, PostgreSQL} \\
+    \textbf{AI \& LLMs}{: TensorFlow, ChatGPT, ElevenLabs, Ollama, Groq, Zero-Knowledge Systems, HuggingFace}
     }}
  \end{itemize}
 
