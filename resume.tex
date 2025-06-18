@@ -25,18 +25,16 @@
 \usepackage{fix-cm}
 \setlength{\footskip}{5pt}
 
-
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
+\usepackage[default]{sourcesanspro}
 
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -114,7 +112,7 @@
 \begin{center}
   \textbf{\Huge \scshape Ethan Davidson} \\ \vspace{1pt}
   \small \href{mailto:ethan.r.davidson@gmail.com}{\underline{ethan.r.davidson@gmail.com}} $|$ 
-  \href{https://etok.me}{\underline{ethandavidson.com}} $|$
+  \href{https://etok.me}{\underline{etok.me}} $|$
   \href{https://linkedin.com/in/etok}{\underline{linkedin.com/in/etok}} $|$
   \href{https://github.com/ethanthatonekid}{\underline{github.com/ethanthatonekid}}
 \end{center}
@@ -124,15 +122,25 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {California State University, Fullerton (CSUF)}{Fullerton, CA}
-    {Bachelor of Science in Computer Science}{2024}
+    {Bachelor of Science in Computer Science}{May 2025}
 \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+    \textbf{Programming}{: TypeScript/JavaScript, Python, Go, C++, Java, SQL, Shell, Protobuf, RDF, OpenAPI} \\
+    \textbf{System Design}{: Docker, AWS, GCP, Linux, Nix, Terraform, CI/CD, Git, Redis, MongoDB, PostgreSQL} \\
+    \textbf{AI \& LLMs}{: TensorFlow, ChatGPT, ElevenLabs, Ollama, Groq, Zero-Knowledge Systems, HuggingFace}
+    }}
+ \end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
     {Software Engineering Intern}{May 2022 -- August 2022}
-    {Dataplex UI, Google}{Kirkland, WA}
+    {Google}{Kirkland, WA}
     \resumeItemListStart
       \resumeItem{Architected and shipped production features for Google Dataplex UI platform using Angular and RxJS}
       \resumeItem{Engineered a reactive state configuration system that reduced testing time by 40\%}
@@ -142,9 +150,9 @@
 
   \resumeSubheading
     {Student Training in Engineering Program (STEP) Intern}{May 2021 -- August 2021}
-    {Hotel Center, Google}{Remote}
+    {Google}{Remote, CA}
     \resumeItemListStart
-      \resumeItem{Owned full-stack development of critical hotel promotions dashboard using Java and Angular}
+      \resumeItem{Owned full-stack development of critical Hotel Center promotions dashboard using Java and Angular}
       \resumeItem{Optimized BigTable access patterns and refactored legacy C++ services for 2x throughput}
       \resumeItem{Designed and implemented RESTful APIs to streamline data flow between services}
       \resumeItem{Spearheaded cross-team quality initiatives and drove successful production deployment}
@@ -164,7 +172,7 @@
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\textbf{Open Source Software Team} $|$ \emph{Association for Computing Machinery, CSUF}}{2020 -- 2024}
+    {\textbf{Open Source Software Team} $|$ \emph{Association for Computing Machinery, CSUF}}{Aug 2020 -- May 2024}
     \resumeItemListStart
       \resumeItem{Scaled developer community from 0 to 100+ contributors across 20 production open-source tools}
       \resumeItem{Launched technical accelerator with 10 workshops per semester, driving 15 successful project launches}
@@ -172,7 +180,7 @@
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\textbf{FullyHacks} $|$ \emph{Hackathon Infrastructure Platform}}{2021 -- 2024}
+    {\textbf{FullyHacks} $|$ \emph{Hackathon Infrastructure Platform}}{Aug 2021 -- May 2024}
     \resumeItemListStart
       \resumeItem{Architected full-stack event platform with Next.js, serving 300+ users and multiple sponsor integrations}
       \resumeItem{Engineered real-time event automation system using Node.js, Discord API, and Digital Ocean}
@@ -187,18 +195,6 @@
       \resumeItem{Recognized by Deno creator Ryan Dahl for technical innovation and developer experience}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-      \small{\item{
-    \textbf{Programming}{: TypeScript/JavaScript, Python, Go, C++, Java, SQL, Shell, Protobuf, RDF, OpenAPI} \\
-    \textbf{System Design}{: Docker, AWS, GCP, Linux, Nix, Terraform, CI/CD, Git, Redis, MongoDB, PostgreSQL} \\
-    \textbf{AI \& LLMs}{: TensorFlow, ChatGPT, ElevenLabs, Ollama, Groq, Zero-Knowledge Systems, HuggingFace}
-    }}
- \end{itemize}
-
 
 %-------------------------------------------
 \end{document}
