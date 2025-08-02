@@ -105,7 +105,6 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
@@ -117,6 +116,9 @@
   \href{https://github.com/ethanthatonekid}{\underline{github.com/ethanthatonekid}}
 \end{center}
 
+%----------PROFESSIONAL SUMMARY----------
+\resumeItem{Experienced full-stack software engineer with a track record of delivering scalable, production-grade systems at Google and leading open-source communities. Skilled cloud-native platform architect with a focus on accelerating development cycles and reducing infrastructure costs. Adept leader in high-velocity, collaborative environments, with expertise in developer tooling, microservices, and AI-driven solutions.}
+
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
@@ -125,76 +127,91 @@
     {Bachelor of Science in Computer Science}{May 2025}
 \resumeSubHeadingListEnd
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-      \small{\item{
-    \textbf{Programming}{: TypeScript/JavaScript, Python, Go, C++, Java, SQL, Shell, Protobuf, RDF, OpenAPI} \\
-    \textbf{System Design}{: Docker, AWS, GCP, Linux, Nix, Terraform, CI/CD, Git, Redis, MongoDB, PostgreSQL} \\
-    \textbf{AI \& LLMs}{: TensorFlow, ChatGPT, ElevenLabs, Ollama, Groq, Zero-Knowledge Systems, HuggingFace}
-    }}
- \end{itemize}
-
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {Software Engineering Intern}{May 2022 -- August 2022}
-    {Google}{Kirkland, WA}
+    {Software Engineer}{Jan 2025 -- Present}
+    {Confidential}{Remote \& On-site, CA}
     \resumeItemListStart
-      \resumeItem{Architected and shipped production features for Google Dataplex UI platform using Angular and RxJS}
-      \resumeItem{Engineered a reactive state configuration system that reduced testing time by 40\%}
-      \resumeItem{Implemented comprehensive test coverage and CI/CD pipelines for critical UI components}
-      \resumeItem{Drove technical design reviews and delivered impact presentations to senior engineers}
+      \resumeItem{Designed and deployed GDPR/CCPA-compliant \textbf{data de-identification API} processing millions of records daily, achieving 99.9\% accuracy and reducing audit time by 75\% through automation.}
+      \resumeItem{Resolved production bottlenecks in \textbf{TypeScript} builds and \textbf{Docker} deployments, enabling zero-downtime releases and optimizing \textbf{CI/CD}, cutting failures by 60\% and boosting velocity by 40\%.}
+      \resumeItem{Refactored monolithic codebase for modularity, resolving 200+ lint issues and improving pipeline reliability by 85\%, enabling integration of 10+ microservices and reducing technical debt by 60\%.}
+      \resumeItem{Led \textbf{RAG architecture} and edge deployment with vector DB optimization, accelerating platform delivery by 30\% and reducing infra costs by 40\%, enabling rapid ML model rollout.}
+    \resumeItemListEnd
+  
+  \resumeSubheading
+    {Software Engineer, Founder}{Jan 2024 -- Present}
+    {\href{https://wazoo.tech}{\underline{Wazoo}}}{Remote \& On-site, CA}
+    \resumeItemListStart
+      \resumeItem{Led 10+ developers to deliver 8+ open-source \textbf{TypeScript} libraries, serving 10K+ developers via npm, growing community to 100+ contributors and 500K+ monthly downloads.}
+      \resumeItem{Organized \textbf{FartHacks 2025} hackathon for 50+ participants, running multi-category judging and live-streamed events to drive engagement and brand growth.}
+      \resumeItem{Achieved 100\% \textbf{Lighthouse} performance and 0ms blocking time for production platform, optimizing Core Web Vitals and responsive design.}
+      \resumeItem{Launched open-source e-commerce shop using \textbf{Deno Deploy} and \textbf{Shopify Storefront API}, integrating payments and inventory for seamless community sales.}
     \resumeItemListEnd
 
   \resumeSubheading
-    {Student Training in Engineering Program (STEP) Intern}{May 2021 -- August 2021}
+    {Software Engineering Intern}{May 2022 -- August 2022}
+    {Google}{Kirkland, WA}
+    \resumeItemListStart
+      \resumeItem{Shipped scalable \textbf{UI features} for Google Dataplex SaaS using \textbf{Angular} and \textbf{RxJS}, improving data discovery for 100K+ users by 65\%.}
+      \resumeItem{Built reactive \textbf{state management} with RxJS, increasing predictability by 80\% and reducing integration test time by 40\%.}
+      \resumeItem{Enhanced quality with comprehensive unit and E2E tests, integrated into CI/CD to catch 95\% of bugs pre-production and cut deployment failures by 70\%.}
+      \resumeItem{Drove technical reviews and cross-team presentations, earning 100\% positive feedback and approval for 3+ feature launches.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {STEP Intern}{May 2021 -- August 2021}
     {Google}{Remote, CA}
     \resumeItemListStart
-      \resumeItem{Owned full-stack development of critical Hotel Center promotions dashboard using Java and Angular}
-      \resumeItem{Optimized BigTable access patterns and refactored legacy C++ services for 2x throughput}
-      \resumeItem{Designed and implemented RESTful APIs to streamline data flow between services}
-      \resumeItem{Spearheaded cross-team quality initiatives and drove successful production deployment}
+      \resumeItem{Built promotions dashboard for 50K+ Hotel Center partners, developing RESTful APIs in \textbf{Java} and responsive \textbf{Angular} frontend, reducing onboarding time by 40\%.}
+      \resumeItem{Modernized legacy \textbf{C++} service and migrated to \textbf{BigTable}, tripling throughput and cutting memory use by 60\%.}
+      \resumeItem{Engineered high-performance APIs with \textbf{Protobuf} and \textbf{C++}, achieving $<$50ms latency for 10M+ daily requests and seamless microservice integration.}
+      \resumeItem{Led cross-team bug bash, catching 100\% of critical issues pre-launch and establishing roadmap for future phases.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-    {\textbf{RoundUp for Impact (RuFi)} $|$ \emph{First Place Winner, HackSC 2024}}{Nov 2024}
-    \resumeItemListStart
-      \resumeItem{Built real-time market analysis with DAIN, winning 1st place among 100+ teams}
-      \resumeItem{Shipped Next.js fintech platform using ZK crypto, SingleStore, Polygon API, and Anyone Protocol}
-      \resumeItem{Cut onboarding time 60\% via multilingual voice UI and streamlined OAuth flow}
-    \resumeItemListEnd
+    {\textbf{RoundUp for Impact (RuFi)} $|$ \emph{First Place, HackSC 2024}}{Nov 2024}
+    \resumeItem{Built award-winning real-time \textbf{fintech platform} with \textbf{Next.js} and \textbf{SingleStore}, using Zero-Knowledge cryptography and multilingual voice UI for DeFi onboarding, cutting onboarding time by 60\%.}
 
   \resumeProjectHeading
-    {\textbf{Open Source Software Team} $|$ \emph{Association for Computing Machinery, CSUF}}{Aug 2020 -- May 2024}
-    \resumeItemListStart
-      \resumeItem{Scaled developer community from 0 to 100+ contributors across 20 production open-source tools}
-      \resumeItem{Launched technical accelerator with 10 workshops per semester, driving 15 successful project launches}
-      \resumeItem{Established engineering culture through Git workflows, code reviews, and async collaboration}
-    \resumeItemListEnd
+    {\textbf{Deno Blocks} $|$ \emph{Visual Programming Platform, \href{https://deno.com/blog/subhosting-hackathon#winning-submissions}{\underline{Deno Subhosting Hackathon}} Winner}}{Jan 2024}
+    \resumeItem{Developed no-code platform enabling direct \textbf{TypeScript} deployment to \textbf{Deno Deploy} via Subhosting API, recognized for technical innovation and developer experience.}
+\resumeSubHeadingListEnd
 
-  \resumeProjectHeading
-    {\textbf{FullyHacks} $|$ \emph{Hackathon Infrastructure Platform}}{Aug 2021 -- May 2024}
-    \resumeItemListStart
-      \resumeItem{Architected full-stack event platform with Next.js, serving 300+ users and multiple sponsor integrations}
-      \resumeItem{Engineered real-time event automation system using Node.js, Discord API, and Digital Ocean}
-      \resumeItem{Drove 100\% participant engagement through seamless registration and project submission flows}
-    \resumeItemListEnd
+%-----------LEADERSHIP-----------
+\section{Leadership}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Open Source President}{Aug 2020 -- May 2024}
+    {ACM, CSUF}{Fullerton, CA}
+    \resumeItem{Scaled developer community from 0 to 100+ contributors across 20+ open-source projects, launching technical accelerator and 10+ workshops per semester.}
+    \resumeItem{Architected scalable event platform (FullyHacks) with \textbf{Next.js} and \textbf{PostgreSQL}, serving 300+ attendees, automating logistics with \textbf{Node.js} and \textbf{Discord API} via Docker CI/CD, achieving 100\% engagement.}
 
-  \resumeProjectHeading
-    {\textbf{Deno Blocks} $|$ \emph{Visual Programming Platform, Deno Subhosting Hackathon Overall Winner}}{Jan 2024}
-    \resumeItemListStart
-      \resumeItem{Pioneered no-code TypeScript deployment platform using Fresh framework and Deno Subhosting}
-      \resumeItem{Architected scalable user authentication and persistent storage using GitHub OAuth and Deno KV}
-      \resumeItem{Recognized by Deno creator Ryan Dahl for technical innovation and developer experience}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
+  \resumeSubheading
+    {ICPC Team Lead}{Aug 2021 -- Feb 2022}
+    {ACM, CSUF}{Fullerton, CA}
+    \resumeItem{Coordinated team strategy and prepared algorithmic notes for collegiate programming competitions.}
+
+  \resumeSubheading
+    {Vaqcoders President, Founder}{Aug 2018 -- May 2019}
+    {Rancho Alamitos High School}{Garden Grove, CA}
+    \resumeItem{Founded and led programming club, hosting workshops and coding challenges, developing beginner curriculum, and mentoring members in open-source projects.}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeItem{\item{
+      \textbf{Programming}{: TypeScript, JavaScript, Python, Go, C++, Java, SQL, HTML/CSS, Shell, Node.js, React, Svelte, Angular, Next.js, RxJS, TensorFlow, HuggingFace, Deno, Fresh} \\
+      \textbf{Systems}{: AWS, GCP, Docker, Terraform, CI/CD, Git, PostgreSQL, MongoDB, Redis, BigTable, Deno KV, Protobuf, OpenAPI, Zero-Knowledge Systems, ChatGPT, Discord API, Ollama} \\
+      \textbf{Activities}{: Collecting, solving puzzles, LEGO, retro programming, competitive play, meeting new people, community building, hackathon participation}
+    }}
+ \end{itemize}
 
 %-------------------------------------------
 \end{document}
