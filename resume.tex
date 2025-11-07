@@ -5,7 +5,7 @@
 % License: MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 \usepackage{lmodern}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -32,9 +32,6 @@
 % \usepackage[sfdefault]{noto-sans}
 \usepackage[default]{sourcesanspro}
 
-% Use semi-bold for \textbf to reduce visual heaviness
-\renewcommand{\bfdefault}{sb}
-
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
@@ -57,7 +54,6 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-\setlist[itemize]{itemsep=2pt, topsep=4pt}
 
 % Sections formatting
 \titleformat{\section}{
@@ -80,21 +76,21 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-2pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-3pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-3pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -104,7 +100,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,96 +111,92 @@
 \begin{center}
   \textbf{\Huge \scshape Ethan Davidson} \\ \vspace{1pt}
   \small \href{mailto:ethan.r.davidson@gmail.com}{\underline{ethan.r.davidson@gmail.com}} $|$ 
-  \href{https://etok.me/}{\underline{etok.me}} $|$
+  \href{https://etok.me}{\underline{etok.me}} $|$
   \href{https://linkedin.com/in/etok}{\underline{linkedin.com/in/etok}} $|$
-  \href{https://github.com/ethanthatonekid}{\underline{github.com/ethanthatonekid}} $|$
-  \textbf{U.S. Citizen}
+  \href{https://github.com/ethanthatonekid}{\underline{github.com/ethanthatonekid}}
 \end{center}
 
-%----------PROFESSIONAL SUMMARY----------
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \resumeItem{Full-stack software engineer with \textbf{2+ years of} combined experience delivering \textbf{scalable, production-grade systems} at Google and in startups. Skilled in cloud-native architecture, TypeScript, and C++; delivered data-driven performance wins and AI solutions that reduce infrastructure costs.}
-\end{itemize}
 
-%-----------TECHNICAL SKILLS-----------
-\section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \resumeItem{
-      \textbf{Programming}{: TypeScript, JavaScript, Python, Go, C++, Java, SQL, HTML, CSS, Shell, Node.js, React, Svelte, Angular, Next.js, RxJS, TensorFlow, HuggingFace, Deno, Fresh} \\
-      \textbf{Systems}{: AWS, GCP, Docker, Terraform, CI/CD, Git, PostgreSQL, MongoDB, Redis, BigTable, Deno KV, GitHub, Protobuf, OpenAPI, ChatGPT, Discord API, Ollama, Neuro-Symbolic AI, Knowledge Graphs, LLMs} \\
-      \textbf{Activities}{: Puzzles, LEGO, retro tech, embedded, hackathons, OSS, community building}
-    }
- \end{itemize}
-
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {California State University, Fullerton (CSUF)}{Fullerton, CA}
-    {Bachelor of Science in Computer Science}{May 2025}
-\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {Software Engineering Intern}{May 2022 -- August 2022}
     {Google}{Kirkland, WA}
+    {Software Engineering Intern}{May 2022 -- August 2022}
+    
     \resumeItemListStart
-      \resumeItem{Developed scalable UI features for Google Dataplex using Angular and RxJS, improving data discovery for \textbf{100K+} users}
-      \resumeItem{Built reactive UI state simulator with RxJS for UI testing, reducing debugging time}
-      \resumeItem{Enhanced quality with comprehensive unit and E2E tests integrated into CI/CD to catch bugs pre-production}
+      \resumeItem{Architected and shipped production features for Google Dataplex UI platform using Angular and RxJS}
+      \resumeItem{Engineered a reactive state configuration system that reduced testing time by 40\%}
+      \resumeItem{Implemented comprehensive test coverage and CI/CD pipelines for critical UI components}
+      \resumeItem{Drove technical design reviews and delivered impact presentations to senior engineers}
     \resumeItemListEnd
 
   \resumeSubheading
+    {Google}{Remote, CA}
     {Student Training in Engineering Program (STEP) Intern}{May 2021 -- August 2021}
-    {Google}{Cambridge, MA}
     \resumeItemListStart
-      \resumeItem{Built promotions dashboard for \textbf{50K+} Hotel Center partners using Java RESTful APIs and responsive Angular frontend}
-      \resumeItem{Modernized legacy C++ service with data-driven memory optimization techniques and migrated to BigTable, achieving \textbf{40\% throughput improvement} and \textbf{60\% memory reduction} for high-performance data processing}
-      \resumeItem{Engineered high-performance APIs with Protobuf and C++, achieving \textbf{<50 ms latency} for \textbf{10M+} daily requests}
-      \resumeItem{Led cross-team testing session (bug bash), catching \textbf{100\%} of critical issues pre-launch}
+      \resumeItem{Owned full-stack development of critical Hotel Center promotions dashboard using Java and Angular}
+      \resumeItem{Optimized BigTable access patterns and refactored legacy C++ services for 2x throughput}
+      \resumeItem{Designed and implemented RESTful APIs to streamline data flow between services}
+      \resumeItem{Spearheaded cross-team quality initiatives and drove successful production deployment}
     \resumeItemListEnd
 
   \resumeSubheading
-    {Software Engineer, Founder}{Jan 2024 -- Present}
-    {\href{https://wazoo.tech/}{Wazoo} | Open-source, AI knowledgebase management and developer tools}{Fullerton, CA}
+    {Association for Computing Machinery (ACM), CSU Fullerton}{Fullerton, CA}
+    {Open Source President}{Aug 2020 -- May 2024}
+    
     \resumeItemListStart
-      \resumeItem{Led \textbf{10+} developers; shipped \textbf{8+} open-source TypeScript libraries via JSR}
-      \resumeItem{Organized hackathons for \textbf{50+} participants with multi-category judging and live streams}
-      \resumeItem{Reached \textbf{100\%} Lighthouse performance and \textbf{0 ms} blocking time in production}
-      \resumeItem{Built open-source e-commerce shop using Shopify Storefront API (payments + inventory)}
-    \resumeItemListEnd
-  
-  \resumeSubheading
-    {Software Engineer}{Jan 2025 -- Present}
-    {\href{https://divinci.ai/}{Divinci} | Enterprise-grade tools to build, test, and launch safe, compliant AI models with confidence}{Santa Monica, CA}
-    \resumeItemListStart
-      \resumeItem{Resolved bottlenecks in TypeScript, Docker, and Codespaces, enabling \textbf{zero-downtime releases}}
-      \resumeItem{Refactored monolith, clearing \textbf{500+ TypeScript errors} and improving modularity}
-      \resumeItem{Applied C++ and Protobuf to performance-critical components for low-latency processing}
-      \resumeItem{Implemented GDPR/CCPA-compliant RAG with Cloudflare edge deployment, reducing inference costs}
+      \resumeItem{Scaled developer community from 0 to 100+ contributors across 20 production open-source tools}
+      \resumeItem{Launched technical accelerator with 10 workshops per semester, driving 15 successful project launches}
+      \resumeItem{Established engineering culture through Git workflows, code reviews, and async collaboration}
+      \resumeItem{Architected full-stack event platform with Next.js, serving 300+ users and multiple sponsor integrations}
+      \resumeItem{Engineered real-time event automation system using Node.js, Discord API, and Digital Ocean}
+      \resumeItem{Drove 100\% participant engagement through seamless registration and project submission flows}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
+
 
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-    {\textbf{\href{https://devpost.com/software/rufi}{Round Up for Impact}} --- Real-time fintech platform using ZK cryptography for DeFi onboarding}
-    {\emph{\href{https://devpost.com/software/rufi}{1st Place, HackSC 2024}}}
+    {\textbf{RoundUp for Impact (RuFi)} $|$ \emph{First Place Winner, HackSC 2024}}{Nov 2024}
+    \resumeItemListStart
+      \resumeItem{Built real-time market analysis with DAIN, winning 1st place among 100+ teams}
+      \resumeItem{Shipped Next.js fintech platform using ZK crypto, SingleStore, Polygon API, and Anyone Protocol}
+      \resumeItem{Cut onboarding time 60\% via multilingual voice UI and streamlined OAuth flow}
+    \resumeItemListEnd
+
   \resumeProjectHeading
-    {\textbf{\href{https://blocks.deno.dev/}{Deno Blocks}} --- No-code platform enabling direct TypeScript application deployment}
-    {\emph{\href{https://deno.com/blog/subhosting-hackathon\#winning-submissions}{Deno Subhosting Hackathon Winner}}}
+    {\textbf{Deno Blocks} $|$ \emph{Visual Programming Platform, Deno Subhosting Hackathon Overall Winner}}{Jan 2024}
+    \resumeItemListStart
+      \resumeItem{Pioneered no-code TypeScript deployment platform using Fresh framework and Deno Subhosting}
+      \resumeItem{Architected scalable user authentication and persistent storage using GitHub OAuth and Deno KV}
+      \resumeItem{Recognized by Deno creator Ryan Dahl for technical innovation and developer experience}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {California State University, Fullerton}{Fullerton, CA}
+    {Bachelor of Science in Computer Science}{May 2025}
 \resumeSubHeadingListEnd
 
-%-----------LEADERSHIP-----------
-\section{Leadership}
-\resumeSubHeadingListStart
-  \resumeItem{\textbf{\href{https://github.com/acmcsufoss}{Open Source President}} $|$ CSUF $|$ Scaled developer community to \textbf{100+ contributors} on \textbf{20+ open-source projects}}
-  \resumeItem{\textbf{\href{https://acmcsuf.com/blog/322}{ICPC Team Lead}} $|$ CSUF $|$ Led team strategy and algorithmic preparation for collegiate programming competitions}
-  \resumeItem{\textbf{\href{https://fullyhacks.acmcsuf.com/}{FullyHacks} Founder \& Webmaster} $|$ CSUF $|$ Organized annual university hackathon}
-\resumeSubHeadingListEnd
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+    \textbf{Languages}{: TypeScript, JavaScript, Python, Go, C++, HTML, CSS, SQL, Shell, Java, MATLAB, BASIC, Processing} \\
+    \textbf{Frameworks/Libraries}{: Svelte, Angular, RxJS, Next.js, TensorFlow, HuggingFace, Fresh} \\
+    \textbf{Cloud/DevOps}{: Docker, Amazon Web Services (AWS), Google Cloud Platform (GCP), Linux, Nix, Terraform, CI/CD, Git} \\
+    \textbf{Databases/Caching}{: Redis, MongoDB, PostgreSQL, BigTable, SingleStore, Deno KV} \\
+    \textbf{Other Tools/Concepts}{: Protobuf, RDF, OpenAPI, Zero-Knowledge Systems, Anyone Protocol, Data Structures, Algorithms, Relational Databases, Non-Relational Databases, Graph Databases, Computer Networks}
+    }}
+ \end{itemize}
 
 %-------------------------------------------
 \end{document}
